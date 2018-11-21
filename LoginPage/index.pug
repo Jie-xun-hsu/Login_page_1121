@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+head
+    link(rel="shortcut icon" href="https://res.cloudinary.com/dubyngnej/image/upload/v1542780578/favicon.ico" type="image/x-icon")
+    title Welcome MOTION LABS
+    link(rel="stylesheet" href="css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(type="text/javascript" src="js/lottie.js")
+    script(type="text/javascript" src="js/index.js")
+body
+    .load#op
+    .container.tp
+        #logo
+    .container.md
+        .info-show
+            .animation-all
+                .nav
+                    .animation.easy
+                        #easy
+                        p Easy to Use
+                    .animation.powerful
+                        #powerful
+                        p Powerful
+                    .animation.step
+                        #step
+                        p Step by Step
+        .cube-login
+            .personal
+                .idbox
+                    img.sicon#sicon(src="./img/id.svg")
+                    .box-id
+                        input#id(type="text" placeholder="Username" required="required")
+                        span.idborder
+                .pwbox
+                    img.sicon(src="./img/pw.svg")
+                    .box-pw
+                        input#pw(type="password" placeholder="Password" required="required")
+                        span.pwborder
+                .btn-submit
+                    button(type="submit")
+                        span SUBMIT
+                .remind
+                    a(href="#1") Sign up  
+                    p  | 
+                    a(href="#2") Forgot your password?
+    .container.footer
+        p © 2018 MOTION-LABS. All Rights Reserved.

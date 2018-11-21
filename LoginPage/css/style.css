@@ -1,0 +1,427 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+}
+
+body {
+  background-image: url("../img/bg.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#op {
+  z-index: 1;
+  width: auto;
+  height: 100%;
+  background-color: #1D2087;
+  position: absolute;
+  margin: auto;
+  margin-top: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.tp {
+  height: 15%;
+  min-height: 110px;
+  position: relative;
+}
+
+.container.tp #logo {
+  width: 180px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+}
+
+.container.md {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #036EB8;
+}
+
+.container.md .info-show {
+  width: 60%;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.container.md .info-show .animation-all {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.container.md .info-show .animation-all .nav {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  left: 0%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container.md .info-show .animation-all .nav .animation {
+  height: 100%;
+  width: 100%;
+  font-size: initial;
+  display: inline-block;
+}
+
+.container.md .info-show .animation-all .nav .animation p {
+  width: 100%;
+  height: 20%;
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.container.md .info-show .animation-all .nav .animation #easy {
+  width: 100%;
+  height: 80%;
+}
+
+.container.md .info-show .animation-all .nav .animation #powerful {
+  width: 100%;
+  height: 80%;
+}
+
+.container.md .info-show .animation-all .nav .animation #step {
+  width: 100%;
+  height: 80%;
+}
+
+.container.md .cube-login {
+  width: 35%;
+  height: 450px;
+  padding: 15px;
+  margin: 15px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: #EFEFEF;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container.md .cube-login .personal {
+  height: 100%;
+  max-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.md .cube-login .personal .idbox {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.md .cube-login .personal img {
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
+  margin-left: auto;
+}
+
+.container.md .cube-login .personal .box-id {
+  width: auto;
+  margin-right: auto;
+}
+
+.container.md .cube-login .personal .box-id input {
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 5px;
+  padding-left: 10px;
+  max-width: 220px;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container.md .cube-login .personal .box-id input:valid {
+  color: #036EB8;
+}
+
+.container.md .cube-login .personal .box-id input:focus + .idborder {
+  -webkit-transform: scaleX(1) translateY(-2px);
+          transform: scaleX(1) translateY(-2px);
+  opacity: 1;
+}
+
+.container.md .cube-login .personal .box-id .idborder {
+  height: 3px;
+  width: 100%;
+  background: #F8B62D;
+  display: block;
+  -webkit-transform: scaleX(0) translateY(-2px);
+          transform: scaleX(0) translateY(-2px);
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container.md .cube-login .personal .pwbox {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.md .cube-login .personal img {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+}
+
+.container.md .cube-login .personal .box-pw {
+  width: auto;
+  margin-right: auto;
+}
+
+.container.md .cube-login .personal .box-pw input {
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 5px;
+  padding-left: 10px;
+  max-width: 220px;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container.md .cube-login .personal .box-pw input:valid {
+  color: #036EB8;
+}
+
+.container.md .cube-login .personal .box-pw input:focus + .pwborder {
+  -webkit-transform: scaleX(1) translateY(-2px);
+          transform: scaleX(1) translateY(-2px);
+  opacity: 1;
+}
+
+.container.md .cube-login .personal .box-pw .pwborder {
+  height: 3px;
+  width: 100%;
+  background: #F8B62D;
+  display: block;
+  -webkit-transform: scaleX(0) translateY(-2px);
+          transform: scaleX(0) translateY(-2px);
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container.md .cube-login .personal .btn-submit {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.md .cube-login .personal button {
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  padding: 0px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #1D2087;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container.md .cube-login .personal button:hover {
+  background-color: #F8B62D;
+}
+
+.container.md .cube-login .personal button:focus {
+  background-color: #F8B62D;
+}
+
+.container.md .cube-login .personal button span {
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+}
+
+.container.md .cube-login .personal button span:after {
+  content: '>';
+  font-size: 20px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.container.md .cube-login .personal button:hover span {
+  padding-right: 10px;
+  color: #000;
+}
+
+.container.md .cube-login .personal button:hover span:after {
+  opacity: 1;
+  color: #000;
+}
+
+.container.md .cube-login .personal button:focus span {
+  padding-right: 10px;
+  color: #000;
+}
+
+.container.md .cube-login .personal button:focus span:after {
+  opacity: 1;
+  color: #000;
+}
+
+.container.md .cube-login .personal .remind {
+  width: 100%;
+  height: 10%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.container.md .cube-login .personal a, .container.md .cube-login .personal p {
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline;
+  outline: none;
+  color: #595757;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container.md .cube-login .personal a:hover {
+  color: #F8B62D;
+}
+
+.container.md .cube-login .personal a:focus {
+  color: #F8B62D;
+}
+
+.container.footer {
+  height: 10%;
+  min-height: 20px;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.footer p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 960px) {
+  .container.tp {
+    margin-top: 0px;
+  }
+  .container.md {
+    width: 100%;
+    height: 500px;
+  }
+  .container.md .info-show {
+    display: none;
+  }
+  .container.md .cube-login {
+    width: 100%;
+    height: 90%;
+    margin: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
